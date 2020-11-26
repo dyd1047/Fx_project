@@ -35,7 +35,7 @@ public class PageMain extends Application{
 		//반환되는 컨테이너가 무엇인지 예측할 수 없으므로, 보다 상위자료형으로 받자
 		for (int i = 0; i < btn.length; i++) {
 			page[i] = (Pane)FXMLLoader.load(this.getClass().getClassLoader().getResource("day1125/page/"+naviTitle[i].toLowerCase()+".fxml")); //main
-		}
+	}
 		
 		//네비게이션 만들기
 		for (int i = 0; i < btn.length; i++) {
