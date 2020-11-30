@@ -1,0 +1,10 @@
+/*주석*/
+VBox{
+	-fx-background-color:red;
+	-fx-alignment:top-center;
+	-fx-spacing:5;
+}
+
+VBox TextField{
+	-fx-pref-width:300;
+}

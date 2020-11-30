@@ -113,6 +113,17 @@ public class CalendarApp extends Application {
 		for (int i = 0; i < box.length; i++) {
 			box[i].erase();
 		}
+		
+		//출력하기 전에, 유저가 선택한 년, 월을 이용하여 다시 구해야 함
+		getStartDayOfWeek();
+		getLastDate();
+		
+		//각 월에 알맞는 데이터 출력
+		int n = 1; //1일부터 1씩 증가하며 출력될 날짜 출력용 변수
+		for(int i = (startDayOfWeek-1); i < lastDate+(startDayOfWeek-1); i++) {
+			box[i].renderText(Integer.toString(n));
+			n++;
+		}
 	}
 
 	public void showWindow(Stage stage, Parent parent) {
